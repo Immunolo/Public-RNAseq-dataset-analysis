@@ -1,1 +1,15 @@
+# Macbook Pro 16" 16GB i7
 
+# Download miniconda/ anaconda
+
+https://docs.conda.io/en/latest/miniconda.html
+https://www.anaconda.com/products/individual
+
+# Install miniconda by following the instructions
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html
+
+# Miniconda
+bash Miniconda3-latest-MacOSX-x86_64.sh
+
+# Anaconda
+Double-click the .pkg file.
