@@ -9,7 +9,7 @@ https://www.anaconda.com/products/individual
 # Install by following the instructions
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html
 
-# Open the terminal and create a new conda environment 
+# Open new terminal and create a new conda environment 
 conda create -n rna-seq
 
 # Activate the environment
