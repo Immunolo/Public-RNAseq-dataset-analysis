@@ -28,8 +28,8 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE88830
 
 # Click on "Send results to Run selector"
 
-# In the Select field download Metadata
-## Option 1 - Total
-## Option 2 - Select only relevant data
+# In the "Select" field download the Metadata (SraRunTable.txt)
+## Option 1 - Total (all files)
+## Option 2 - Select only relevant data at the bottom
 
-# Save SraRunTable.txt in the created GSE folder
+# Save SraRunTable.txt in the created folder (e.g. GSE88830)
