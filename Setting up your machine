@@ -22,39 +22,9 @@ conda config --add channels conda-forge
 # Install SRA tools 
 conda install sra-tools
 
-# Find you favorite GEO dataset
-https://www.ncbi.nlm.nih.gov/gds
+# Install fastqc 
+conda install fastqc
 
-# Locate the SRA entry at the bottom of the page e.g.
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE88830
-
-# Preparation
-
-## Check your current directory
-pwd
-
-## List files in your current directory
-ls
-
-## Change the current directory
-cd {name_of_directory}
-cd Documents
-
-## Create folder for RNAseq datasets (e.g.)
-mkdir RNAseq_datasets
-cd RNAseq_datasets
-
-## Create folder for your dataset (e.g.)
-mkdir GSE88830
-
-# Click on the SRA entry at the bottom of the page e.g.
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE88830
-
-# Click on "Send results to Run selector"
-
-# In the Select field download Metadata
-## Option 1 - Total
-## Option 2 - Select only relevant data
-
-# Save SraRunTable.txt in the created GSE folder
+# Install multiqc 
+conda install multiqc
 
