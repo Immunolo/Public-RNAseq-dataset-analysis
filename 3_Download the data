@@ -1,1 +1,42 @@
 # Open the terminal
+
+# Navigate to dataset directory (e.g. GSE88830)
+
+# Use nano to create the following script
+nano download_sra_data.sh
+
+#! /bin/bash
+
+# extract SRA numbers from the SraRunTable and store in SRA variable
+SRA=$(tail -n +2 SraRunTable.txt | cut -d "," -f 1)
+
+# This is a loop for downloading the data
+for i in ${SRA}
+	do
+    # prefetch checks the correct file size
+	  prefetch ${i}
+	  if [ -f ${i}.fastq.gz ]
+            then
+                echo '${i} already finished'
+        else
+                echo '(o) Convert SRA entry: ${i}' 
+                # downloading SRA entry
+                fastq-dump --gzip --defline-qual + ${i}/${i}.sra
+                echo '(o) Done convert  ${i}'
+        fi
+    done
+
+# Hit option key + O / Enter
+
+# Hit option key + X / Enter
+
+# Make script executable
+chmod u+x download_sra_data.sh
+
+# Run the script
+./download_sra_data.sh
+
+# Wait until done
+
+# Use Amphetamine to prevent Mac from sleeping while downloading
+https://apps.apple.com/de/app/amphetamine/id937984704?mt=12
