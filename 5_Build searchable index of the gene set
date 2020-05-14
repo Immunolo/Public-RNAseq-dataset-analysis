@@ -6,8 +6,10 @@ conad activate rna-seq
 # Unzip the gene set (e.g.)
 gunzip gencode.vM25.transcripts.fa.gz
 
+# Install Salmon for alignment 
+conda install salmon
 
+# Build searchable index
+salmon index -t gencode.vM25.transcripts.fa -i gencode.vM25_index --gencode
 
-
-# Install salmon
 
