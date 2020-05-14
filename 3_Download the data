@@ -1,5 +1,8 @@
 # Open the terminal
 
+# Activate the correct environment
+conda activate rna-seq
+
 # Navigate to dataset directory (e.g. GSE88830)
 
 # Use nano to create the following script
@@ -38,5 +41,5 @@ chmod u+x download_sra_data.sh
 
 # Wait until done
 
-# Use Amphetamine to prevent Mac from sleeping while downloading
+# Tipp: Use Amphetamine to prevent Mac from sleeping while downloading
 https://apps.apple.com/de/app/amphetamine/id937984704?mt=12
