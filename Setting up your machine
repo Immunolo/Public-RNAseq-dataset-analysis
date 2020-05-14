@@ -1,0 +1,30 @@
+# Download miniconda/ anaconda
+
+## Miniconda
+https://docs.conda.io/en/latest/miniconda.html
+
+## Anaconda
+https://www.anaconda.com/products/individual
+
+# Install by following the instructions
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html
+
+# Create a new conda environment 
+conda create -n rna-seq
+
+# Activate the environment
+conda activate rna-seq
+
+# Add new channels to the environment
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+# Install SRA tools 
+conda install sra-tools
+
+# Install fastqc 
+conda install fastqc
+
+# Install multiqc 
+conda install multiqc
+
