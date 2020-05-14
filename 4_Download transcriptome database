@@ -1,0 +1,10 @@
+# Download gene sets for the respective organism of your dataset (here: mouse) 
+
+# For example from gencode
+https://www.gencodegenes.org/
+
+# Navigate to Mouse > Current release
+
+# Scroll down and download Transcript sequences in Fasta format
+
+# Save in 
