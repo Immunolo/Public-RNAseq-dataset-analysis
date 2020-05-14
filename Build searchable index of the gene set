@@ -1,0 +1,13 @@
+# Open the terminal and navigate to dataset directory (e.g. GSE88830)
+
+# Acitvate the correct environment
+conad activate rna-seq
+
+# Unzip the gene set (e.g.)
+gunzip gencode.vM25.transcripts.fa.gz
+
+
+
+
+# Install salmon
+
