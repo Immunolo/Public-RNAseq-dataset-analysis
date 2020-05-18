@@ -1,0 +1,17 @@
+# Open the Terminal and navigate to the dataset directory
+
+# Acitvate the correct environment
+conda activate rna-seq
+
+# Create output directory for fastqc
+mkdir fastqc_output
+
+# Run fastqc for all fastq files in the dataset directory
+fastqc -o fastqc_output *.fastq.gz
+
+# This will take a while, activate Amphetamine and let run
+
+# In the dataset directory, run multiqc to produce cumulated report of all fastqc reports
+multiqc fastqc_output
+
+# Open html file to assess quality of dataset
