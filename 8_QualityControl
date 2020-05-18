@@ -14,4 +14,4 @@ fastqc -o fastqc_output *.fastq.gz
 # In the dataset directory, run multiqc to produce cumulated report of all fastqc reports
 multiqc fastqc_output
 
-# Open html file to assess quality of dataset
+# Open html file to assess the quality of the dataset
