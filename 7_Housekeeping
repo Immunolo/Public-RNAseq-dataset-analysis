@@ -1,0 +1,9 @@
+# Open the Terminal and navigate to dataset folder
+
+# Check content of dataset folder
+ls
+
+# Keep the the fastq-gz files but delete the .sra files in the SRR folders
+rm *SRR/*.sra
+
+# Done!
