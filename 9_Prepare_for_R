@@ -1,0 +1,27 @@
+# Open the terminal and navigate to the dataset directory
+
+# Create a R directory in the dataset folder
+mkdir R
+
+# Install R & R Studio
+R: https://cran.r-project.org/mirrors.html
+R-Studio: https://rstudio.com/products/rstudio/
+
+# Create a new R project
+File/New Project -> New Directory -> New Project -> Directory name: <name_of_dataset_rna_seq>
+
+# In the terminal navigate to the dataset directory and move the SRR files and folders to the R directory
+mv SRR* R
+
+# Navigate to the R folder
+cd R
+
+# Check content
+ls
+
+# Move SRR*.fastq.gz files one folder uo
+mv SRR*.fastq.gz ..
+
+# Move SRR* folders to the <name_of_dataset_rna_seq> directory in the R folder
+mv SRR* <name_of_dataset_rna_seq>
+
