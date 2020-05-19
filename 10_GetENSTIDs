@@ -1,3 +1,6 @@
+
+
+
 perl -nle'print $& while m{(ENSMUST\d{11})}g' gencode.vM25.transcripts.fa > enst.txt
 
 perl -nle'print $& while m{(ENSMUSG\d{11})}g' gencode.vM25.transcripts.fa > ensg.txt
